@@ -79,13 +79,13 @@ def main():
                     pygame.quit()
                     sys.exit
 
-        screen.fill(WHITE) # Use color from config
+        screen.fill(GREEN) # Use color from config
         
         screen.blit(header, (215, 125))
 
-        pygame.draw.rect(screen, GREEN, button1)
-        pygame.draw.rect(screen, GREEN, button2)
-        pygame.draw.rect(screen, GREEN, button3)
+        pygame.draw.rect(screen, RED, button1)
+        pygame.draw.rect(screen, RED, button2)
+        pygame.draw.rect(screen, RED, button3)
 
         screen.blit(button1_text, (button1.x + (button_length - button1_text.get_width()) // 2, button1.y + (button_hieght - button1_text.get_height()) // 2))
 
